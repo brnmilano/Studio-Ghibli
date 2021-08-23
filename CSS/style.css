@@ -111,8 +111,12 @@ body {
   background: var(--secondary);
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   transform: skew(-25deg);
+}
+
+.link > *{
+  z-index: 10;
 }
 
 .link.watch-trailer::before {
@@ -131,4 +135,12 @@ body {
 
 .link:visited, .link:link {
   color: #FFF;
+}
+
+#player {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
 }
