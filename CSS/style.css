@@ -1,0 +1,134 @@
+:root {
+  --primary: #1a4855;
+  --secondary: #628e75;
+  --gray: #f9f9f9;
+  --primary-font: #212429;
+  --secondary-font: #a4a4a4;
+}
+
+body {
+  font-family: 'Poppins' !important;
+}
+
+.container-body {
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+  background: linear-gradient(130deg, rgba(98, 142, 117, 1) 0.66%, rgba(26, 72, 85, 1) 83.32%);
+  min-height: 100vh;
+}
+
+.logo {
+  height: 50px;
+}
+
+.container-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 165px;
+}
+
+.button {
+  padding: 0 100px;
+}
+
+.teste {
+  text-decoration: none;
+}
+
+.img-button {
+  padding: 16px;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container-two h2 {
+  font-size: 20px;
+  padding: 0 165px;
+  color: var(--gray);
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 38px;
+}
+
+.container-two h1 {
+  font-size: 68px;
+  padding: 0 165px;
+  color: var(--gray);
+  font-weight: 900;
+  line-height: 74px;
+  margin-top: 15px;
+}
+
+.container-two p {
+  font-size: 16px;
+  padding: 0 385px 0 165px;
+  color: var(--gray);
+  font-weight: 200;
+  line-height: 28px;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 40px 120px 0 260px;
+}
+
+.div-button {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 165px;
+  margin-top: 50px;
+}
+
+.icon-play {
+  margin: 0 10px;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--secondary);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: skew(-25deg);
+}
+
+.link.watch-trailer::before {
+  background: none;
+  border: 2px solid var(--secondary);
+}
+
+.play-now {
+  padding: 15px 34px;
+}
+
+.watch-trailer {
+  padding: 16px 34px;
+  margin: 0 18px 0;
+}
+
+.link:visited, .link:link {
+  color: #FFF;
+}
