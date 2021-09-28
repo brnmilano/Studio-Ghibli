@@ -14,6 +14,7 @@ body {
   box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
   background: linear-gradient(130deg, rgba(98, 142, 117, 1) 0.66%, rgba(26, 72, 85, 1) 83.32%);
   min-height: 100vh;
+  padding: 0 100px;
 }
 
 .logo {
@@ -41,6 +42,7 @@ body {
 
 .container-main {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -48,11 +50,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 0 255px 0 165px;
 }
 
 .container-two h2 {
   font-size: 20px;
-  padding: 0 165px;
   color: var(--gray);
   font-weight: 700;
   line-height: 30px;
@@ -61,7 +63,6 @@ body {
 
 .container-two h1 {
   font-size: 68px;
-  padding: 0 165px;
   color: var(--gray);
   font-weight: 900;
   line-height: 74px;
@@ -70,24 +71,30 @@ body {
 
 .container-two p {
   font-size: 16px;
-  padding: 0 385px 0 165px;
   color: var(--gray);
   font-weight: 200;
   line-height: 28px;
+  padding: 25px 0 0;
 }
 
 .container-three {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 50%;
-  padding: 40px 120px 0 260px;
+  padding: 0 100px 0 0;
+}
+
+.imgChihiro {
+  height: 515px;
+  padding: 0 100px 0 0;
 }
 
 .div-button {
   display: flex;
   align-items: center;
-  padding: 0 0 0 165px;
-  margin-top: 50px;
+  padding: 0 0 0 176px;
 }
 
 .icon-play {
@@ -115,7 +122,7 @@ body {
   transform: skew(-25deg);
 }
 
-.link > *{
+.link>* {
   z-index: 10;
 }
 
@@ -137,51 +144,153 @@ body {
   color: #FFF;
 }
 
-#player {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 1280px) {
+  .container-body {
+    padding: 20px;
+  }
+  .container-first {
+    margin-bottom: 100px;
+  }
+  .container-two {
+    padding: 0 100px 0 0;
+  }
+  .container-three {
+    padding: 0;
+  }
+  .imgChihiro {
+    height: 350px;
+    padding: 0;
+  }
+  .div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 0 10px;
+  }
+  .play-now {
+    padding: 10px 5px 10px 5px;
+  }
+  .watch-trailer {
+    padding: 10px 5px 10px 5px;
+    margin: 0 18px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-first {
+    padding: 0;
+  }
+  .logo {
+    height: 80px;
+  }
+  .container-main {
+    display: grid;
+    place-items: center;
+  }
+  .container-two {
+    padding: 0;
+  }
+  .container-two h1 {
+    font-size: 40px;
+    line-height: 50px; 
+  }
+  .button {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 414px) {
+  .container-body {
+    padding: 20px;
+  }
   .container-first {
-    padding: 10px;
+    padding: 0;
+  }
+  .container-two {
+    padding: 0;
+  }
+  .container-two h2 {
+    font-size: 20px;
+    color: var(--gray);
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 38px;
+  }
+  .container-two h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
   }
   .button {
-    padding: 10px;
+    padding: 0;
   }
   .img-button {
     padding: 16px 10px;
   }
-  .container-two h2 {
-    font-size: 20px;
-    padding: 0;
-    line-height: 30px;
-    margin: 10px 0 0 15px;
-  }
-  .container-two h1 {
-    font-size: 20px;
-    padding: 0;
-    line-height: 25px;
-    margin: 10px 0 0 15px;
-  }
-  .container-two p {
-    font-size: 16px;
-    padding: 0;
-    line-height: 18px;
-    margin: 10px 0 0 15px;
+  .container-main {
+    display: grid;
+    place-items: center;
   }
   .container-three {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .imgChihiro {
+    height: 200px;
     padding: 0;
   }
   .div-button {
-    justify-content: center;
-    padding: 0 0 0 200px;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+  }
+  .play-now {
+    padding: 10px 5px 10px 5px;
+  }
+  .watch-trailer {
+    padding: 10px 5px 10px 5px;
+    margin: 0 18px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container-first {
+    padding: 0;
+  }
+  .logo {
+    height: 50px;
+  }
+  .button {
+    padding: 0;
+  }
+  .img-button {
+    padding: 5px;
+  }
+  .container-main {
+    display: grid;
+    place-items: center;
+  }
+  .container-two {
+    padding: 0;
+  }
+  .container-two h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+  }
+  .container-two h1 {
+    font-size: 22px;
+    line-height: 25px; 
+  }
+  .container-two p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 22px;
+    padding: 20px 0 20px 0;
+  }
+  .div-button {
+    font-size: 15px;
   }
 }
