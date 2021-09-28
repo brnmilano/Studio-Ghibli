@@ -31,7 +31,7 @@ body {
   padding: 0 100px;
 }
 
-.teste {
+.text-decoration {
   text-decoration: none;
 }
 
@@ -143,4 +143,45 @@ body {
   left: 50%;
   z-index: 100;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 414px) {
+  .container-first {
+    padding: 10px;
+  }
+  .button {
+    padding: 10px;
+  }
+  .img-button {
+    padding: 16px 10px;
+  }
+  .container-two h2 {
+    font-size: 20px;
+    padding: 0;
+    line-height: 30px;
+    margin: 10px 0 0 15px;
+  }
+  .container-two h1 {
+    font-size: 20px;
+    padding: 0;
+    line-height: 25px;
+    margin: 10px 0 0 15px;
+  }
+  .container-two p {
+    font-size: 16px;
+    padding: 0;
+    line-height: 18px;
+    margin: 10px 0 0 15px;
+  }
+  .container-three {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+  }
+  .div-button {
+    justify-content: center;
+    padding: 0 0 0 200px;
+    margin: 0;
+  }
 }
